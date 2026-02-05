@@ -6,31 +6,19 @@
     <title>JaXx | Official</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Fondo con textura y degradado radial profundo */
         body { 
             background-color: #050505;
             background-image: 
                 radial-gradient(circle at center, #121212 0%, #050505 100%),
-                url('https://www.transparenttextures.com/patterns/stardust.png'); /* Textura sutil de grano */
+                url('https://www.transparenttextures.com/patterns/stardust.png');
             color: #ffffff; 
             font-family: 'Inter', sans-serif; 
             scroll-behavior: smooth; 
         }
-        .accent-color { color: #00ff88; }
         .border-neon { border: 1px solid #1a1a1a; transition: all 0.4s ease; }
         .border-neon:hover { border-color: #00ff88; box-shadow: 0 0 25px rgba(0, 255, 136, 0.15); }
-        
-        /* Efecto galería profesional */
-        .photo-card { 
-            filter: grayscale(100%) contrast(110%); 
-            transition: all 0.6s ease; 
-            border: 1px solid #222;
-        }
-        .photo-card:hover { 
-            filter: grayscale(0%) contrast(100%); 
-            border-color: #00ff88;
-            transform: scale(1.02);
-        }
+        .photo-card { filter: grayscale(100%); transition: all 0.6s ease; }
+        .photo-card:hover { filter: grayscale(0%); border-color: #00ff88; }
     </style>
 </head>
 <body class="antialiased">
@@ -43,21 +31,15 @@
 
     <main class="max-w-5xl mx-auto px-6">
         
-        <header class="text-center mb-24 mt-12">
-            <img src="logo.png" alt="JaXx" class="mx-auto mb-8 max-h-20 w-auto opacity-90">
-            <h1 class="text-8xl font-black tracking-tighter uppercase italic leading-none">JaXx</h1>
-            <p class="mt-4 text-zinc-500 tracking-[0.7em] uppercase text-[9px]">Electronic Music Artist</p>
+        <header class="text-center mb-20 mt-12">
+            <img src="logo.png" alt="JaXx Logo" class="mx-auto max-h-40 w-auto">
+            <p class="mt-6 text-zinc-500 tracking-[0.7em] uppercase text-[9px]">Electronic Music Artist</p>
         </header>
 
-        <section id="music" class="mb-24">
-            <h2 class="text-xs font-bold tracking-widest uppercase mb-10 text-zinc-600 border-b border-zinc-900 pb-2 text-center">Featured Session</h2>
+        <section id="music" class="mb-24 text-center">
+            <h2 class="text-xs font-bold tracking-widest uppercase mb-10 text-zinc-600 border-b border-zinc-900 pb-2">Featured Session</h2>
             <div class="rounded-lg overflow-hidden border-neon bg-black">
-                <iframe 
-                    width="100%" 
-                    height="300" 
-                    scrolling="no" 
-                    frameborder="no" 
-                    allow="autoplay" 
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
                     src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1759546203&color=%2300ff88&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true">
                 </iframe>
             </div>
@@ -66,10 +48,10 @@
         <section id="media" class="mb-24">
             <h2 class="text-xs font-bold tracking-widest uppercase mb-10 text-zinc-600 border-b border-zinc-900 pb-2 text-center">Visuals</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <img src="foto1.jpg" class="photo-card aspect-[3/4] object-cover rounded">
-                <img src="foto2.jpg" class="photo-card aspect-[3/4] object-cover rounded">
-                <img src="foto3.jpg" class="photo-card aspect-[3/4] object-cover rounded">
-                <img src="foto4.jpg" class="photo-card aspect-[3/4] object-cover rounded">
+                <img src="foto1.jpg" class="photo-card aspect-[3/4] object-cover rounded border border-zinc-800">
+                <img src="foto2.jpg" class="photo-card aspect-[3/4] object-cover rounded border border-zinc-800">
+                <img src="foto3.jpg" class="photo-card aspect-[3/4] object-cover rounded border border-zinc-800">
+                <img src="foto4.jpg" class="photo-card aspect-[3/4] object-cover rounded border border-zinc-800">
             </div>
         </section>
 
@@ -77,26 +59,4 @@
             <div>
                 <h2 class="text-lg font-bold mb-4 uppercase italic">Artist Profile</h2>
                 <p class="text-zinc-400 text-sm leading-relaxed text-justify">
-                    Enfocado en la evolución del sonido techno y tech-house, JaXx construye narrativas que priorizan la textura y la progresión. Sus sets son una exploración de grooves hipnóticos, diseñados para la pista de baile y alejados de los convencionalismos.
-                </p>
-            </div>
-            <div class="flex flex-col gap-6">
-                <div>
-                    <h2 class="text-lg font-bold mb-2 uppercase italic">Inquiries</h2>
-                    <a href="mailto:jaxxmusic.contacto@gmail.com" class="text-white hover:text-[#00ff88] transition-colors font-mono text-sm">jaxxmusic.contacto@gmail.com</a>
-                </div>
-                <div class="flex gap-8 pt-4">
-                    <a href="https://www.instagram.com/jaxx_music_/" target="_blank" class="text-zinc-500 hover:text-white text-[10px] uppercase tracking-widest transition-colors">Instagram</a>
-                    <a href="https://soundcloud.com/jaxx_es" target="_blank" class="text-zinc-500 hover:text-white text-[10px] uppercase tracking-widest transition-colors">SoundCloud</a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="py-12 text-center border-t border-zinc-900">
-        <p class="text-zinc-800 text-[9px] tracking-[0.4em] uppercase">© 2026 JaXx Music | Independent Artist</p>
-    </footer>
-
-</body>
-</html>
+                    Enfocado en la evolución del sonido techno y tech-house, JaXx construye narrativas que priorizan la
