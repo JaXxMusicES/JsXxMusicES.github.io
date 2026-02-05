@@ -8,15 +8,15 @@
     <style>
         body { 
             background-color: #050505;
-            /* Fondo con degradado y textura de ruido sutil */
+            /* Fondo con degradado radial y textura de grano fino */
             background-image: 
-                radial-gradient(circle at center, #111 0%, #050505 100%),
+                radial-gradient(circle at center, #111111 0%, #050505 100%),
                 url('https://www.transparenttextures.com/patterns/stardust.png');
             color: #ffffff; 
             font-family: 'Inter', sans-serif; 
         }
         .border-neon { border: 1px solid #1a1a1a; transition: 0.3s; }
-        .border-neon:hover { border-color: #00ff88; }
+        .border-neon:hover { border-color: #00ff88; box-shadow: 0 0 15px rgba(0, 255, 136, 0.1); }
     </style>
 </head>
 <body class="antialiased">
@@ -29,10 +29,15 @@
         </header>
 
         <section id="music" class="mb-20">
-            <h2 class="text-[10px] tracking-widest uppercase mb-6 text-zinc-600 border-b border-zinc-900 pb-2">Featured Session</h2>
+            <h2 class="text-[10px] tracking-widest uppercase mb-6 text-zinc-600 border-b border-zinc-900 pb-2 text-center">Featured Session</h2>
             <div class="rounded-lg overflow-hidden border-neon bg-black">
-                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" 
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1759546203&color=%2300ff88&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
+                <iframe 
+                    width="100%" 
+                    height="166" 
+                    scrolling="no" 
+                    frameborder="no" 
+                    allow="autoplay" 
+                    src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/jaxx_es/jaxx-expression-two&color=%2300ff88&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
                 </iframe>
             </div>
         </section>
@@ -51,7 +56,7 @@
             <div>
                 <h2 class="text-white font-bold mb-4 uppercase italic tracking-widest text-xs">Profile</h2>
                 <p class="text-zinc-500 text-sm leading-relaxed">
-                    Sonido enfocado en la progresión y texturas crudas. JaXx explora los límites del techno y tech-house sin clichés.
+                    Sonido enfocado en la progresión y texturas crudas. JaXx explora los límites del techno y tech-house sin concesiones.
                 </p>
             </div>
             <div class="flex flex-col gap-6">
@@ -60,8 +65,8 @@
                     <a href="mailto:jaxxmusic.contacto@gmail.com" class="text-zinc-400 hover:text-[#00ff88] transition-colors font-mono text-sm">jaxxmusic.contacto@gmail.com</a>
                 </div>
                 <div class="flex gap-8 pt-2">
-                    <a href="https://www.instagram.com/jaxx_music_/" target="_blank" class="text-zinc-500 hover:text-white text-[10px] uppercase tracking-[0.3em]">Instagram</a>
-                    <a href="https://soundcloud.com/jaxx_es" target="_blank" class="text-zinc-500 hover:text-white text-[10px] uppercase tracking-[0.3em]">SoundCloud</a>
+                    <a href="https://www.instagram.com/jaxx_music_/" target="_blank" class="text-zinc-500 hover:text-white text-[10px] uppercase tracking-[0.3em] transition-colors">Instagram</a>
+                    <a href="https://soundcloud.com/jaxx_es" target="_blank" class="text-zinc-500 hover:text-white text-[10px] uppercase tracking-[0.3em] transition-colors">SoundCloud</a>
                 </div>
             </div>
         </section>
