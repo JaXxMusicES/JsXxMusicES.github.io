@@ -6,22 +6,32 @@
     <title>JaXx | Official</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        /* FONDO CON GRANO GENERADO POR CÓDIGO */
         body { 
-            background-color: #050505;
-            /* Fondo con degradado radial y textura de grano fino */
+            background-color: #080808;
+            /* Creamos un efecto de "ruido analógico" real */
             background-image: 
-                radial-gradient(circle at center, #111111 0%, #050505 100%),
-                url('https://www.transparenttextures.com/patterns/stardust.png');
+                linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
             color: #ffffff; 
             font-family: 'Inter', sans-serif; 
+            min-height: 100vh;
         }
+
+        /* Degradado radial para dar profundidad */
+        .vignette {
+            fixed: inset 0;
+            background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.8) 100%);
+            pointer-events: none;
+        }
+
         .border-neon { border: 1px solid #1a1a1a; transition: 0.3s; }
         .border-neon:hover { border-color: #00ff88; box-shadow: 0 0 15px rgba(0, 255, 136, 0.1); }
     </style>
 </head>
 <body class="antialiased">
 
-    <main class="max-w-4xl mx-auto px-6 py-16">
+    <main class="max-w-4xl mx-auto px-6 py-16 relative z-10">
         
         <header class="text-center mb-20">
             <img src="logo.png" alt="JaXx" class="mx-auto max-h-32 w-auto mb-4">
@@ -29,7 +39,7 @@
         </header>
 
         <section id="music" class="mb-20">
-            <h2 class="text-[10px] tracking-widest uppercase mb-6 text-zinc-600 border-b border-zinc-900 pb-2 text-center">Featured Session</h2>
+            <h2 class="text-[10px] tracking-widest uppercase mb-6 text-zinc-600 border-b border-zinc-900 pb-2 text-center text-zinc-400">Featured Session</h2>
             <div class="rounded-lg overflow-hidden border-neon bg-black">
                 <iframe 
                     width="100%" 
@@ -43,26 +53,26 @@
         </section>
 
         <section id="media" class="mb-20">
-            <h2 class="text-[10px] tracking-widest uppercase mb-6 text-zinc-600 border-b border-zinc-900 pb-2 text-center">Visuals</h2>
+            <h2 class="text-[10px] tracking-widest uppercase mb-6 text-zinc-600 border-b border-zinc-900 pb-2 text-center text-zinc-400">Visuals</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <img src="foto1.jpg" class="aspect-[3/4] object-cover rounded grayscale hover:grayscale-0 transition-all duration-500 border border-zinc-800">
-                <img src="foto2.jpg" class="aspect-[3/4] object-cover rounded grayscale hover:grayscale-0 transition-all duration-500 border border-zinc-800">
-                <img src="foto3.jpg" class="aspect-[3/4] object-cover rounded grayscale hover:grayscale-0 transition-all duration-500 border border-zinc-800">
-                <img src="foto4.jpg" class="aspect-[3/4] object-cover rounded grayscale hover:grayscale-0 transition-all duration-500 border border-zinc-800">
+                <img src="foto1.jpg" class="aspect-[3/4] object-cover rounded grayscale hover:grayscale-0 transition-all duration-500 border border-zinc-800 shadow-2xl">
+                <img src="foto2.jpg" class="aspect-[3/4] object-cover rounded grayscale hover:grayscale-0 transition-all duration-500 border border-zinc-800 shadow-2xl">
+                <img src="foto3.jpg" class="aspect-[3/4] object-cover rounded grayscale hover:grayscale-0 transition-all duration-500 border border-zinc-800 shadow-2xl">
+                <img src="foto4.jpg" class="aspect-[3/4] object-cover rounded grayscale hover:grayscale-0 transition-all duration-500 border border-zinc-800 shadow-2xl">
             </div>
         </section>
 
         <section id="contact" class="grid md:grid-cols-2 gap-12 border-t border-zinc-900 pt-12 mb-20">
             <div>
                 <h2 class="text-white font-bold mb-4 uppercase italic tracking-widest text-xs">Profile</h2>
-                <p class="text-zinc-500 text-sm leading-relaxed">
+                <p class="text-zinc-400 text-sm leading-relaxed">
                     Sonido enfocado en la progresión y texturas crudas. JaXx explora los límites del techno y tech-house sin concesiones.
                 </p>
             </div>
             <div class="flex flex-col gap-6">
                 <div>
                     <h2 class="text-white font-bold mb-2 uppercase italic tracking-widest text-xs">Contact</h2>
-                    <a href="mailto:jaxxmusic.contacto@gmail.com" class="text-zinc-400 hover:text-[#00ff88] transition-colors font-mono text-sm">jaxxmusic.contacto@gmail.com</a>
+                    <a href="mailto:jaxxmusic.contacto@gmail.com" class="text-zinc-300 hover:text-[#00ff88] transition-colors font-mono text-sm">jaxxmusic.contacto@gmail.com</a>
                 </div>
                 <div class="flex gap-8 pt-2">
                     <a href="https://www.instagram.com/jaxx_music_/" target="_blank" class="text-zinc-500 hover:text-white text-[10px] uppercase tracking-[0.3em] transition-colors">Instagram</a>
@@ -73,7 +83,7 @@
 
     </main>
 
-    <footer class="py-10 text-center border-t border-zinc-900">
+    <footer class="py-10 text-center border-t border-zinc-900 bg-black/20">
         <p class="text-zinc-800 text-[8px] tracking-[0.4em] uppercase">© 2026 JaXx Music</p>
     </footer>
 
