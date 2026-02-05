@@ -8,72 +8,68 @@
     <style>
         body { 
             background-color: #050505;
-            background-image: radial-gradient(circle at center, #121212 0%, #050505 100%);
+            /* Fondo con degradado y textura de ruido sutil */
+            background-image: 
+                radial-gradient(circle at center, #111 0%, #050505 100%),
+                url('https://www.transparenttextures.com/patterns/stardust.png');
             color: #ffffff; 
             font-family: 'Inter', sans-serif; 
-            margin: 0;
         }
-        .border-neon { border: 1px solid #1a1a1a; transition: all 0.4s ease; }
+        .border-neon { border: 1px solid #1a1a1a; transition: 0.3s; }
         .border-neon:hover { border-color: #00ff88; }
-        .sc-container { background: #000; padding: 10px; border-radius: 8px; }
     </style>
 </head>
-<body class="antialiased text-zinc-300">
+<body class="antialiased">
 
-    <main class="max-w-4xl mx-auto px-6 py-20">
+    <main class="max-w-4xl mx-auto px-6 py-16">
         
-        <header class="text-center mb-24">
-            <img src="logo.png" alt="JaXx" class="mx-auto max-h-32 w-auto mb-6">
+        <header class="text-center mb-20">
+            <img src="logo.png" alt="JaXx" class="mx-auto max-h-32 w-auto mb-4">
             <p class="text-zinc-500 tracking-[0.5em] uppercase text-[10px]">Electronic Music Artist</p>
         </header>
 
-        <section id="music" class="mb-24">
-            <h2 class="text-[10px] tracking-widest uppercase mb-8 text-zinc-600 border-b border-zinc-900 pb-2">Featured Session</h2>
-            <div class="sc-container border-neon">
-                <iframe 
-                    width="100%" 
-                    height="166" 
-                    scrolling="no" 
-                    frameborder="no" 
-                    allow="autoplay" 
-                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1759546203&color=%2300ff88&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
+        <section id="music" class="mb-20">
+            <h2 class="text-[10px] tracking-widest uppercase mb-6 text-zinc-600 border-b border-zinc-900 pb-2">Featured Session</h2>
+            <div class="rounded-lg overflow-hidden border-neon bg-black">
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" 
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1759546203&color=%2300ff88&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
                 </iframe>
             </div>
         </section>
 
-        <section id="media" class="mb-24">
-            <h2 class="text-[10px] tracking-widest uppercase mb-8 text-zinc-600 border-b border-zinc-900 pb-2">Visuals</h2>
+        <section id="media" class="mb-20">
+            <h2 class="text-[10px] tracking-widest uppercase mb-6 text-zinc-600 border-b border-zinc-900 pb-2 text-center">Visuals</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <img src="foto1.jpg" class="aspect-[3/4] object-cover rounded border border-zinc-800 grayscale hover:grayscale-0 transition-all duration-700">
-                <img src="foto2.jpg" class="aspect-[3/4] object-cover rounded border border-zinc-800 grayscale hover:grayscale-0 transition-all duration-700">
-                <img src="foto3.jpg" class="aspect-[3/4] object-cover rounded border border-zinc-800 grayscale hover:grayscale-0 transition-all duration-700">
-                <img src="foto4.jpg" class="aspect-[3/4] object-cover rounded border border-zinc-800 grayscale hover:grayscale-0 transition-all duration-700">
+                <img src="foto1.jpg" class="aspect-[3/4] object-cover rounded grayscale hover:grayscale-0 transition-all duration-500 border border-zinc-800">
+                <img src="foto2.jpg" class="aspect-[3/4] object-cover rounded grayscale hover:grayscale-0 transition-all duration-500 border border-zinc-800">
+                <img src="foto3.jpg" class="aspect-[3/4] object-cover rounded grayscale hover:grayscale-0 transition-all duration-500 border border-zinc-800">
+                <img src="foto4.jpg" class="aspect-[3/4] object-cover rounded grayscale hover:grayscale-0 transition-all duration-500 border border-zinc-800">
             </div>
         </section>
 
-        <section id="contact" class="grid md:grid-cols-2 gap-16 border-t border-zinc-900 pt-16 mb-20">
+        <section id="contact" class="grid md:grid-cols-2 gap-12 border-t border-zinc-900 pt-12 mb-20">
             <div>
-                <h2 class="text-white font-bold mb-4 uppercase italic tracking-wider text-sm">Artist Profile</h2>
-                <p class="text-zinc-500 text-sm leading-relaxed text-justify">
-                    Explorando la vanguardia del techno y tech-house. JaXx se centra en la construcción de atmósferas crudas y ritmos hipnóticos.
+                <h2 class="text-white font-bold mb-4 uppercase italic tracking-widest text-xs">Profile</h2>
+                <p class="text-zinc-500 text-sm leading-relaxed">
+                    Sonido enfocado en la progresión y texturas crudas. JaXx explora los límites del techno y tech-house sin clichés.
                 </p>
             </div>
             <div class="flex flex-col gap-6">
                 <div>
-                    <h2 class="text-white font-bold mb-2 uppercase italic tracking-wider text-sm">Inquiries</h2>
+                    <h2 class="text-white font-bold mb-2 uppercase italic tracking-widest text-xs">Contact</h2>
                     <a href="mailto:jaxxmusic.contacto@gmail.com" class="text-zinc-400 hover:text-[#00ff88] transition-colors font-mono text-sm">jaxxmusic.contacto@gmail.com</a>
                 </div>
-                <div class="flex gap-8 pt-4">
-                    <a href="https://www.instagram.com/jaxx_music_/" target="_blank" class="text-zinc-600 hover:text-white text-[10px] uppercase tracking-[0.3em] transition-colors">Instagram</a>
-                    <a href="https://soundcloud.com/jaxx_es" target="_blank" class="text-zinc-600 hover:text-white text-[10px] uppercase tracking-[0.3em] transition-colors">SoundCloud</a>
+                <div class="flex gap-8 pt-2">
+                    <a href="https://www.instagram.com/jaxx_music_/" target="_blank" class="text-zinc-500 hover:text-white text-[10px] uppercase tracking-[0.3em]">Instagram</a>
+                    <a href="https://soundcloud.com/jaxx_es" target="_blank" class="text-zinc-500 hover:text-white text-[10px] uppercase tracking-[0.3em]">SoundCloud</a>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="py-12 text-center border-t border-zinc-900">
-        <p class="text-zinc-800 text-[9px] tracking-[0.4em] uppercase">© 2026 JaXx Music</p>
+    <footer class="py-10 text-center border-t border-zinc-900">
+        <p class="text-zinc-800 text-[8px] tracking-[0.4em] uppercase">© 2026 JaXx Music</p>
     </footer>
 
 </body>
