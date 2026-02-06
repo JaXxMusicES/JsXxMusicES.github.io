@@ -44,15 +44,16 @@
             z-index: 10;
         }
         .social-icon {
-            font-size: 2rem;
-            color: #555;
+            font-size: 2.2rem;
+            color: #444;
             transition: all 0.4s ease;
         }
         .social-icon:hover {
-            color: #fff;
+            color: #00ff88;
             transform: translateY(-5px);
-            text-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
+            text-shadow: 0 0 25px rgba(0, 255, 136, 0.5);
         }
+        .accent-text { color: #00ff88; font-weight: 600; }
     </style>
 </head>
 <body class="antialiased font-light">
@@ -78,12 +79,15 @@
 
         <section id="profile" class="mb-32">
             <h2 class="text-white text-[10px] tracking-[0.5em] uppercase mb-12 text-center opacity-40">Artist Profile</h2>
-            <div class="max-w-2xl mx-auto text-center space-y-6">
+            <div class="max-w-2xl mx-auto text-center space-y-8">
                 <p class="text-zinc-300 text-lg leading-relaxed italic font-extralight">
-                    "JaXx es la respuesta a una búsqueda constante de dinamismo en la pista de baile."
+                    "<span class="accent-text">JaXx</span> es la respuesta a una búsqueda constante de dinamismo en la pista de baile."
                 </p>
-                <p class="text-zinc-400 text-sm leading-relaxed text-center">
-                    Especializado en las vertientes más rítmicas del House y el Tech House, su identidad sonora se define por un groove omnipresente que actúa como columna vertebral en cada uno de sus sets. Inspirado por la energía de las pistas más exigentes, combina la esencia del House clásico —vocales con alma y matices funky— con la contundencia del sonido de club moderno.
+                <p class="text-zinc-400 text-sm leading-relaxed text-justify md:text-center">
+                    Especializado en las vertientes más rítmicas del <span class="text-zinc-200">House y el Tech House</span>, su identidad sonora se define por un groove omnipresente que actúa como columna vertebral en cada uno de sus sets. Inspirado por la energía de las pistas más exigentes, combina la esencia del House clásico —vocales con alma y matices funky— con la contundencia del sonido de club moderno.
+                </p>
+                <p class="text-zinc-400 text-sm leading-relaxed text-justify md:text-center">
+                    Sus sesiones son estructuras progresivas diseñadas para leer la psicología de la sala, adaptándose al entorno sin perder nunca su carácter bailable. Como productor, fusiona la calidez de los ritmos orgánicos con la precisión de la electrónica actual, convirtiendo cada set en una experiencia colectiva donde la diversión y la calidad convergen.
                 </p>
             </div>
         </section>
@@ -106,11 +110,11 @@
             </div>
         </section>
 
-        <section id="contact" class="text-center pb-32 border-t border-white/5 pt-20">
-            <h2 class="text-white text-[10px] tracking-[0.5em] uppercase mb-10 opacity-40">Inquiries</h2>
-            <a href="mailto:jaxxmusic.contacto@gmail.com" class="text-2xl font-light hover:text-[#00ff88] transition-colors mb-16 block">jaxxmusic.contacto@gmail.com</a>
+        <section id="contact" class="text-center pb-40 border-t border-white/5 pt-20">
+            <h2 class="text-white text-[10px] tracking-[0.5em] uppercase mb-10 opacity-40">Booking & Contact</h2>
+            <a href="mailto:jaxxmusic.contacto@gmail.com" class="text-2xl font-light hover:text-[#00ff88] transition-colors mb-20 block tracking-tight">jaxxmusic.contacto@gmail.com</a>
             
-            <div class="flex justify-center gap-16 mt-16">
+            <div class="flex justify-center gap-20 mt-20">
                 <a href="https://www.instagram.com/jaxx_music_/" target="_blank" class="social-icon" title="Instagram">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
