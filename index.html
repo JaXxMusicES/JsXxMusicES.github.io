@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JaXx | Official</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         body { 
             margin: 0;
@@ -42,10 +43,15 @@
             pointer-events: none;
             z-index: 10;
         }
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.02);
-            backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
+        .social-icon {
+            font-size: 2rem;
+            color: #555;
+            transition: all 0.4s ease;
+        }
+        .social-icon:hover {
+            color: #fff;
+            transform: translateY(-5px);
+            text-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
         }
     </style>
 </head>
@@ -76,17 +82,14 @@
                 <p class="text-zinc-300 text-lg leading-relaxed italic font-extralight">
                     "JaXx es la respuesta a una búsqueda constante de dinamismo en la pista de baile."
                 </p>
-                <p class="text-zinc-400 text-sm leading-relaxed text-justify md:text-center">
+                <p class="text-zinc-400 text-sm leading-relaxed text-center">
                     Especializado en las vertientes más rítmicas del House y el Tech House, su identidad sonora se define por un groove omnipresente que actúa como columna vertebral en cada uno de sus sets. Inspirado por la energía de las pistas más exigentes, combina la esencia del House clásico —vocales con alma y matices funky— con la contundencia del sonido de club moderno.
-                </p>
-                <p class="text-zinc-400 text-sm leading-relaxed text-justify md:text-center">
-                    Sus sesiones son estructuras progresivas diseñadas para leer la psicología de la sala. Como productor, fusiona la calidez de los ritmos orgánicos con la precisión de la electrónica actual, convirtiendo cada set en una experiencia colectiva donde la diversión y la calidad convergen.
                 </p>
             </div>
         </section>
 
         <section id="music" class="mb-32">
-            <div class="glass-panel p-1 rounded-xl overflow-hidden shadow-2xl">
+            <div class="bg-white/5 p-1 rounded-xl overflow-hidden shadow-2xl border border-white/5">
                 <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" 
                 src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/jaxx_es/jaxx-expression-two&color=%2300ff88&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
                 </iframe>
@@ -104,11 +107,16 @@
         </section>
 
         <section id="contact" class="text-center pb-32 border-t border-white/5 pt-20">
-            <h2 class="text-white text-[10px] tracking-[0.5em] uppercase mb-8 opacity-40">Inquiries</h2>
-            <a href="mailto:jaxxmusic.contacto@gmail.com" class="text-2xl font-light hover:text-[#00ff88] transition-colors">jaxxmusic.contacto@gmail.com</a>
-            <div class="flex justify-center gap-12 mt-12">
-                <a href="https://www.instagram.com/jaxx_music_/" target="_blank" class="text-[10px] uppercase tracking-widest text-zinc-500 hover:text-white transition-colors">Instagram</a>
-                <a href="https://soundcloud.com/jaxx_es" target="_blank" class="text-[10px] uppercase tracking-widest text-zinc-500 hover:text-white transition-colors">SoundCloud</a>
+            <h2 class="text-white text-[10px] tracking-[0.5em] uppercase mb-10 opacity-40">Inquiries</h2>
+            <a href="mailto:jaxxmusic.contacto@gmail.com" class="text-2xl font-light hover:text-[#00ff88] transition-colors mb-16 block">jaxxmusic.contacto@gmail.com</a>
+            
+            <div class="flex justify-center gap-16 mt-16">
+                <a href="https://www.instagram.com/jaxx_music_/" target="_blank" class="social-icon" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://soundcloud.com/jaxx_es" target="_blank" class="social-icon" title="SoundCloud">
+                    <i class="fa-brands fa-soundcloud"></i>
+                </a>
             </div>
         </section>
 
